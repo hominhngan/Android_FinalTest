@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/ConvertFromTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Convert from: "
+        android:layout_marginHorizontal="20dp"
+        android:textSize="18sp"
+
+        />
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Select Item"
+        android:layout_below="@+id/ConvertFromTv"
+        android:paddingVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:spinnerMode="dropdown"
+        />
+    <EditText
+        android:id="@+id/inputEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Celsius"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/spinnerFrom"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="16dp"/>
+    <TextView
+        android:id="@+id/ConvertToTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert to: "
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/inputEt"
+        />
+    <Spinner
+        android:id="@+id/spinnerTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Select Item"
+        android:layout_below="@+id/ConvertToTv"
+        android:paddingVertical="10dp"
+
+        android:layout_marginHorizontal="20dp"
+        android:spinnerMode="dropdown"
+        />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="Convert"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="convert_unit">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+</resources>
